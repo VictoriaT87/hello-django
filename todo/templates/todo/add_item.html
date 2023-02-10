@@ -12,7 +12,7 @@
     <h1>Add A To Do Item:</h1>
 
     <form method="POST" action="add">
-        {% crsf_token %}
+        {% csrf_token %}
         <div>
             <p>
                 <label for="id_name">Name: </label>
@@ -21,8 +21,8 @@
         </div>
         <div>
             <p>
-                <label for="id_done">Done: </label>
-                <input type="checkbox" id="id_done" done="done" />
+                <label for = "id_done">Done:</label>
+                <input type="checkbox" id="id_done" name="done" />
             </p>
         </div>
         <div>
